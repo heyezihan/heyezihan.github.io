@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是一个个人网站，介绍个人信息、兴趣爱好、成绩统计和意见反馈">
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="MyCSS.css">
+</head>
+<body>
+    <header class="top header-bg">
+        <h1>个人网站</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="personal_info.html">个人信息</a></li>
+            <li><a href="hobby.html">兴趣爱好</a></li>
+            <li><a href="grade.html">成绩统计</a></li>
+            <li class="selected"><a href="feedback.html">意见反馈</a></li>
+        </ul>
+    </nav>
+
+    <!--意见反馈使用表单实现-->
+    <section id = "main">
+        <h3>意见反馈</h3>
+        <!--反馈完成后会跳转至感谢反馈页面-->
+        <form action="thank_you.html" method="POST">
+            <li>
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" class = "form-field" required>
+            </li>
+
+            <li>
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" class = "form-field" required>
+            </li>
+
+            <li>
+                <label for="phone">电话:</label>
+                <input type="tel" id="phone" name="phone" class="form-field" pattern="[0-9]{11}" required>
+            </li>
+            
+            <li>
+                <label for="message">留言:</label>
+                <textarea id="message" name="message" class = "form-field" required></textarea>
+            </li>
+
+            <button type="submit" class="submit-button">提交</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 个人网站 | 联系方式: 2603978342@qq.com</a></p>
+        <img src="image/reimu.png" alt="reimu" class="reimu-pic">
+        <img src="image/marisa.png" alt="Marisa" class="marisa-pic">
+    </footer>
+</body>
+</html>

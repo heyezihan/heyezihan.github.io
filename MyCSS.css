@@ -1,0 +1,214 @@
+/*主干部分*/
+body { 
+    background-color: lightblue;
+    font-family: Georgia, "黑体", Times, serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/*header使用星星背景填满*/
+.header-bg {
+    background-image: url('image/star.png');
+    background-size: cover;
+}
+
+/*设置页眉区*/
+header.top {
+    margin: 10px;
+    height: 105px;
+    width: 20%;
+    float: left;
+    color:darkblue;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*设置导航区样式*/
+nav {
+    background-color: #efe5d0;
+    margin: 10px 10px 0 10px;
+    height: 105px;
+    width: 77%;
+    float: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*设置导航区内容样式*/
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: space-around; /* 水平均匀分布 */
+}
+
+nav ul li {
+    padding: 5px 10px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    color: #954b4b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li.selected {
+    background-color: #c8b99c;
+    border-radius: 4px;
+}
+
+/*设置内容区样式*/
+section#main {
+    background-color: aliceblue;
+    margin: 10px;
+    height: 500px;
+    width: 96%;
+    float: left;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 15px solid #ccc;
+}
+
+/*设置内容区的内容样式*/
+section.content {
+    background-color: #fff;
+    margin: 20px;
+}
+
+/*调整“兴趣爱好”一栏展示的照片*/
+section#main .profile-pic {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+/*设置“首页”的句子样式*/
+.poem {
+    font-family: "宋体", SimSun, "Times New Roman", serif; /* 设置字体为宋体 */
+    font-weight: bold; /* 设置粗体 */
+    display: flex;
+    flex-direction: column;
+}
+
+/*设置句子的基本字样*/
+.line {
+    display: inline;
+    font-size: 40px;
+    color: #000000;  
+    margin: 0; /* 去除默认的段落间距 */
+}
+
+/*设置“If you cannot be a poet”的位置*/
+.en-left {
+    margin-left: 450px;
+}
+
+/*设置“be the poem”的位置*/
+.en-right {
+    margin-left: 900px;
+}
+
+/*设置“写不成诗的话”的位置*/
+.ch-left {
+    margin-left: 500px;
+}
+
+/*设置“那就活成诗吧”的位置*/
+.ch-right {
+    margin-left: 800px;
+}
+
+/*将关键字设为链接，并用红色和较大字体强调*/
+a.highlight {
+    color: #ff0000;
+    font-size: 60px; 
+    text-decoration: none;/*去除下划线*/
+}
+
+/*鼠标悬停时改变颜色*/
+a.highlight:hover {
+    color: orange;
+}
+
+.form-field{
+    margin-bottom: 10px;
+}
+
+/*设置表格样式*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd; /* 添加列的分隔线 */
+}
+
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd; /* 添加表头列的分隔线 */
+}
+
+/*设置表单的“留言”区样式*/
+textarea.form-field {
+    height: 150px; 
+    width: 1150px; 
+    resize: none;  /* 禁止用户调整大小 */
+}
+
+/*表单的“提交”按钮*/
+button.submit-button {
+    margin-top: 20px; 
+    margin-left: 1150px;
+    padding: 10px 20px; 
+    background-color: #4CAF50;
+    color: white; 
+    border: none; /* 去掉按钮边框 */
+    border-radius: 4px; /* 圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型指针 */
+}
+
+/*按钮悬停时改变颜色*/
+button.submit-button:hover {
+    background-color: #45a049; 
+}
+
+/*调整图片的排列*/
+.image-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; /* 调整宽度 */
+    padding: 0px; /* 设置图片之间的间距 */
+}
+
+/*页脚区*/
+footer{
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*reimu是左边的红色卡通人物，使用绝对定位固定位置*/
+.reimu-pic {
+    position: absolute;
+    bottom: 88px;
+    left: 0px;
+    width: 180px;
+}
+
+/*marisa是右边的金发卡通人物，使用绝对定位固定位置*/
+.marisa-pic {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 450px;
+}
+

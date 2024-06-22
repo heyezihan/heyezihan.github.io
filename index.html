@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--head部分，都是基础内容-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="这是一个个人网站，介绍个人信息、兴趣爱好、成绩统计和意见反馈">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="MyCSS.css">
+</head>
+<body>
+    <!--页眉部分，使用图片填充-->
+    <header class="top header-bg">
+        <h1>个人网站</h1>
+    </header>
+
+    <!--导航区，有五个不同的链接-->
+    <nav>
+        <ul>
+            <li class="selected"><a href="index.html">首页</a></li>
+            <li><a href="personal_info.html">个人信息</a></li>
+            <li><a href="hobby.html">兴趣爱好</a></li>
+            <li><a href="grade.html">成绩统计</a></li>
+            <li><a href="feedback.html">意见反馈</a></li>
+        </ul>
+    </nav>
+
+    <!--首页，使用了我个人喜欢的句子，吸引人的眼球-->
+    <section id="main">
+        <div class="poem">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p class="line en-left">If you cannot be a <a class="highlight" href="personal_info.html">poet</a>,</p>
+            <p class="line en-right">be the <a class="highlight" href="hobby.html">poem</a>.</p>
+            <p class="line ch-left">写不成<a class="highlight" href="grade.html">诗</a>的话，</p>
+            <p class="line ch-right">那就活成<a class="highlight" href="feedback.html">诗</a>吧。</p>
+        </div>
+    </section>
+
+    <!--页脚区，由两个动漫人物作为装饰-->
+    <footer>
+        <p>&copy; 2024 个人网站 | 联系方式: 2603978342@qq.com</a></p>
+        <img src="image/reimu.png" alt="reimu" class="reimu-pic">
+        <img src="image/marisa.png" alt="Marisa" class="marisa-pic">
+    </footer>
+</body>
+</html>
